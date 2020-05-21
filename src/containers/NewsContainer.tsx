@@ -3,15 +3,16 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../modules';
 import News from '../components/News';
 import { getNewsApi } from '../modules/news';
+import Category from '../components/Category';
 
-function NewsContainers() {
+function NewsContainers({ match }: any) {
   const { loading, data, error } = useSelector(
     (state: RootState) => state.news.news
   );
-  const [category, setCategory] = useState('');
+
   const dispatch = useDispatch();
 
-  console.log(data);
+  const category: string = match.params.category || '';
 
   useEffect(() => {
     dispatch(getNewsApi(category));
@@ -19,7 +20,12 @@ function NewsContainers() {
 
   if (!data) return null;
 
-  return <News data={data} loading={loading} error={error} />;
+  return (
+    <>
+      <Category category={category} />
+      <News data={data} loading={loading} error={error} />
+    </>
+  );
 }
 
 export default NewsContainers;

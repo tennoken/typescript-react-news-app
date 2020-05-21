@@ -1,14 +1,16 @@
 .article {
+  max-width: 768px;
+  margin: 0 auto;
   display: flex;
   padding: 20px;
 
   .thumbnail {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 160px;
+    max-height: 160px;
   }
 
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
   }
 

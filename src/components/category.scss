@@ -1,0 +1,24 @@
+nav {
+  max-width: 768px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  ul {
+    display: flex;
+    padding: 0;
+
+    a {
+      list-style: none;
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      margin-right: 15px;
+      cursor: pointer;
+
+      &.active {
+        font-weight: bold;
+        border-bottom: 1px solid gray;
+      }
+    }
+  }
+}
