@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export async function getNewsApi(category: string) {
   const response = await axios.get(
-    `http://newsapi.org/v2/top-headlines?country=kr&apiKey=8f232a11f5844304a3bd11baac26a757&category=${category}`
+    `/top-headlines?country=kr&apiKey=c5d4a2f093234ce1ac7923d7d507de61&category=${category}`
   );
   return response.data.articles;
 }
