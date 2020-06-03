@@ -13,7 +13,7 @@ type NewsProps = {
 function News({ data, loading, error }: NewsProps): any {
   return data.map((article) => (
     <NewsItem
-      key={article.url}
+      key={article.title}
       title={article.title}
       urlToImage={article.urlToImage}
       description={article.description}

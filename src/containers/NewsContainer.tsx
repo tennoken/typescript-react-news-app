@@ -9,7 +9,6 @@ function NewsContainers({ match }: any) {
   const { loading, data, error } = useSelector(
     (state: RootState) => state.news.news
   );
-
   const dispatch = useDispatch();
 
   const category: string = match.params.category || '';
@@ -19,10 +18,11 @@ function NewsContainers({ match }: any) {
   }, [category, dispatch]);
 
   if (!data) return null;
+  if (loading) return <div>로딩중 ...</div>;
 
   return (
     <>
-      <Category category={category} />
+      <Category />
       <News data={data} loading={loading} error={error} />
     </>
   );

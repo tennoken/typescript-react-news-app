@@ -12,19 +12,19 @@ const categories = [
   { name: 'technology', text: '기술' },
 ];
 
-type CategoryProps = {
-  category: string;
-};
-
-function Category({ category }: CategoryProps) {
+function Category() {
   return (
     <nav>
       <ul>
         {categories.map((item) => (
           <NavLink
             key={item.name}
-            exact={item.name === ''}
-            to={item.name === '' ? '/' : `/${item.name}`}
+            exact={true}
+            to={
+              item.name === ''
+                ? process.env.PUBLIC_URL + '/'
+                : process.env.PUBLIC_URL + `/${item.name}`
+            }
           >
             {item.text}
           </NavLink>
