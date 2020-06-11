@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://newsapi.org/v2';
+axios.defaults.baseURL =
+  process.env.NODE_ENV === 'development' ? '/' : 'https://newsapi.org/v2';
 
 export async function getNewsApi(category: string) {
   const receivedCategory = category === '' ? '' : `&category=${category}`;
