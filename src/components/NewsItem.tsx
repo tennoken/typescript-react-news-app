@@ -5,7 +5,7 @@ type NewsItemProps = {
   title: string;
   urlToImage: string;
   description: string;
-  publishedAt: Date;
+  publishedAt: string;
   url: string;
 };
 
@@ -16,6 +16,9 @@ function NewsItem({
   publishedAt,
   url,
 }: NewsItemProps) {
+  const [date, time] = publishedAt.split('T');
+  const publishedTime = time.substring(0, 8);
+
   return (
     <div className="article">
       <a href={url} target="_blank" rel="noopener noreferrer">
@@ -25,7 +28,9 @@ function NewsItem({
         <a href={url} target="_blank" rel="noopener noreferrer">
           <h2>{title}</h2>
         </a>
-        <span>{publishedAt}</span>
+        <span>
+          {date} {publishedTime}
+        </span>
         <p>{description}</p>
       </div>
     </div>

@@ -22,7 +22,7 @@ export type NewsData = {
   description: string;
   url: string;
   urlToImage: string;
-  publishedAt: Date;
+  publishedAt: string; //
   content: string;
 };
 
