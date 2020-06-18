@@ -47,6 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://newsapi.org/v2",
   "homepage": "https://tennoken.github.io/typescript-react-news-app/"
 }

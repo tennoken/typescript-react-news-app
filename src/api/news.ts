@@ -1,13 +1,10 @@
 import axios from 'axios';
 
-axios.defaults.baseURL =
-  process.env.NODE_ENV === 'development' ? '/' : 'https://newsapi.org/v2';
-
 export async function getNewsApi(category: string) {
   try {
     const receivedCategory = category === '' ? '' : `&category=${category}`;
     const response = await axios.get(
-      `/top-headlines?country=kr&apiKey=c5d4a2f093234ce1ac7923d7d507de61${receivedCategory}`
+      `https://newsapi.org/v2/top-headlines?country=kr&apiKey=c5d4a2f093234ce1ac7923d7d507de61${receivedCategory}`
     );
     return response.data.articles;
   } catch (error) {
