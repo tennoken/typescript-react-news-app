@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/typescript-react-news-app/static/css/main.5ad3e9b7.chunk.css",
-    "main.js": "/typescript-react-news-app/static/js/main.3c772824.chunk.js",
-    "main.js.map": "/typescript-react-news-app/static/js/main.3c772824.chunk.js.map",
+    "main.js": "/typescript-react-news-app/static/js/main.0fcc7402.chunk.js",
+    "main.js.map": "/typescript-react-news-app/static/js/main.0fcc7402.chunk.js.map",
     "runtime-main.js": "/typescript-react-news-app/static/js/runtime-main.09d22c5d.js",
     "runtime-main.js.map": "/typescript-react-news-app/static/js/runtime-main.09d22c5d.js.map",
-    "static/js/2.2e0edde9.chunk.js": "/typescript-react-news-app/static/js/2.2e0edde9.chunk.js",
-    "static/js/2.2e0edde9.chunk.js.map": "/typescript-react-news-app/static/js/2.2e0edde9.chunk.js.map",
+    "static/js/2.8a0fa1a7.chunk.js": "/typescript-react-news-app/static/js/2.8a0fa1a7.chunk.js",
+    "static/js/2.8a0fa1a7.chunk.js.map": "/typescript-react-news-app/static/js/2.8a0fa1a7.chunk.js.map",
     "index.html": "/typescript-react-news-app/index.html",
-    "precache-manifest.5a60722a11e2302007364a399dea6c52.js": "/typescript-react-news-app/precache-manifest.5a60722a11e2302007364a399dea6c52.js",
+    "precache-manifest.1cb27ec377cdac5356bdfbee63107fe8.js": "/typescript-react-news-app/precache-manifest.1cb27ec377cdac5356bdfbee63107fe8.js",
     "service-worker.js": "/typescript-react-news-app/service-worker.js",
     "static/css/main.5ad3e9b7.chunk.css.map": "/typescript-react-news-app/static/css/main.5ad3e9b7.chunk.css.map",
-    "static/js/2.2e0edde9.chunk.js.LICENSE.txt": "/typescript-react-news-app/static/js/2.2e0edde9.chunk.js.LICENSE.txt"
+    "static/js/2.8a0fa1a7.chunk.js.LICENSE.txt": "/typescript-react-news-app/static/js/2.8a0fa1a7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.09d22c5d.js",
-    "static/js/2.2e0edde9.chunk.js",
+    "static/js/2.8a0fa1a7.chunk.js",
     "static/css/main.5ad3e9b7.chunk.css",
-    "static/js/main.3c772824.chunk.js"
+    "static/js/main.0fcc7402.chunk.js"
   ]
 }
